@@ -528,21 +528,18 @@ position: relative;
 	position: relative;
 }
 
-.work-thumb-text-background {
+.work-thumb-text {
+display: flex;
+align-items: center;
+justify-content: center;
+	color: var(--primary-white-color);
+    text-transform: uppercase;
+    font-weight: 700;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	height: 70px;
 	background-color: var(--work-thumb-backgroud-color);
-}
-.work-thumb-text {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	color: var(--primary-white-color);
-    text-transform: uppercase;
-    font-weight: 700;
 }
 
 /* КОМАНДА */
@@ -621,16 +618,12 @@ position: relative;
 	background-color: var(--footer-icon-background-color);
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer-icon-link:hover {
 	background-color: var(--accent-color);
 }
 .footer-icon-link:focus {
 	background-color: var(--accent-color);
 }
-
-
-
 .footer-instagram-icon {
 	width: 20px;
 	height: 20px;
@@ -655,19 +648,12 @@ position: relative;
 	border-radius: 50%;
 	color:var(--icon-link-color);
 	background-color: var(--primary-white-color);
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .icon-link:hover, .icon-link:focus {
 background-color: var(--accent-color);
+color: var(--primary-white-color);
 }
-.icon-link:hover .instagram-icon {
-fill: var(--primary-white-color);
-}	
-.icon-link:focus .instagram-icon {
-	fill: var(--primary-white-color);
-}		
-
 .instagram-icon {
 	width: 20px;
 	height: 20px;
@@ -680,7 +666,6 @@ fill: var(--primary-white-color);
 	justify-content: center;
 	gap: 30px;
 }
-
 .customer-link {
 	width: 170px;
 	height: 92px;
@@ -690,23 +675,20 @@ fill: var(--primary-white-color);
 	align-items: center;
 	color: var(--icon-link-color);
 	border: solid rgba(175, 177, 184, 1) 1px;
-	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-link:hover {
 	border-color: var(--accent-color);
+	color: var(--accent-color);
 }
 .customer-link:focus {
 	border-color: var(--accent-color);
+	color: var(--accent-color)
 }
-.customer-link:hover .custumer-icon {
-	fill: var(--accent-color);
-}
-.customer-link:focus .custumer-icon {
-	fill: var(--accent-color);
-}
+
 .custumer-icon {
 	width: 106px;
 	height: 60px;
 	fill: currentColor;
-	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
 }
